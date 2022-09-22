@@ -20,5 +20,4 @@ const NavbarCard = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: lavender;
-
 `

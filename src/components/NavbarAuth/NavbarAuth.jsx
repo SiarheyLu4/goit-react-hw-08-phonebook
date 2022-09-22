@@ -21,6 +21,9 @@ const HeaderLink = styled(NavLink)`
   padding: 20px;
   text-decoration: none;
   color: slateblue;
+  &:hover{
+    background: #d3a6a6;
+  }
   &.active {
     background-color: #cfc7ff;
     color: black;
