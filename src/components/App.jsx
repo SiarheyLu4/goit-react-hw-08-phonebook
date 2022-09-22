@@ -1,7 +1,20 @@
-import Phonebook from "./Phonebook/Phonebook";
+import styled from "styled-components";
 
-export const App = () => {
+import Navbar from "./Navbar/Navbar";
+import UserRoutes from "./UserRoutes";
+
+const App = () => {
   return (
-      <Phonebook/>
+    <Container>
+      <Navbar />
+      <UserRoutes/>
+    </Container>
   );
 };
+
+export default App;
+
+const Container = styled.div`
+  max-width: 1140px;
+  margin: 0 auto;
+`
