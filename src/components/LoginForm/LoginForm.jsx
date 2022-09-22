@@ -4,19 +4,15 @@ import { initialState } from "./initialState";
 import useForm from "shared/hooks/useForm";
 
 
-const RegisterForm = ({onSubmit}) => {
+const LoginForm = ({onSubmit}) => {
   const {state, handleChange, handleSubmit} = useForm({initialState, onSubmit})
 
-  const { name, email, password } = state;
+  const { email, password } = state;
   
   return (
     <Card>
-      <h2>Register page</h2>
+      <h2>Login page</h2>
       <Form action="" onSubmit={handleSubmit}>
-        <div>
-          <Label htmlFor="">Имя пользователя:</Label>
-          <Input value={name} name="name" onChange={handleChange} type="text" placeholder="Введите имя пользователя" required />
-        </div>
         <div>
           <Label htmlFor="">Email пользователя:</Label>
           <Input value={email} name="email" onChange={handleChange} type="email" placeholder="Введите email пользователя" />
@@ -33,7 +29,7 @@ const RegisterForm = ({onSubmit}) => {
   )
 };
 
-export default RegisterForm;
+export default LoginForm;
 
 const Card = styled.div`
   margin: 0 auto;
