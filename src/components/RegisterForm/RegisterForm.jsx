@@ -1,10 +1,19 @@
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+
 
 import { initialState } from "./initialState";
 import useForm from "shared/hooks/useForm";
+import { signup } from "redux/auth/auth-operations";
 
 
-const RegisterForm = ({onSubmit}) => {
+const RegisterForm = () => {
+  const dispatch = useDispatch();
+
+  const onSubmit = (data) => {
+    dispatch(signup(data));
+  }
+
   const {state, handleChange, handleSubmit} = useForm({initialState, onSubmit})
 
   const { name, email, password } = state;
