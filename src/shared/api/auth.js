@@ -16,4 +16,11 @@ export const login = async (data) => {
   return result;
 }
 
+export const logout = async () => {
+  const data = await instance.post("/users/logout");
+  instance.defaults.headers.common.authorization = "";
+
+  return data;
+}
+
 export default instance;
