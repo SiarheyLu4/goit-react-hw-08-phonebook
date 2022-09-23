@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <NavbarCard>
       {/* <h1>Phonebook</h1> */}
-      <HeaderLink to="/" >Phonebook</HeaderLink>
+      <HeaderLink to="/home" >Phonebook</HeaderLink>
       {isLogin && <NavbarMenu />}
       {isLogin ? <NavbarUser /> : <NavbarAuth />}
     </NavbarCard>

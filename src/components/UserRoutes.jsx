@@ -12,7 +12,7 @@ const UserRoutes = () => {
   return (
     <Suspense fallback={<Loader />} >
       <Routes>
-        <Route path='/' element={<MainPage/>} />
+        <Route path='/home' element={<MainPage/>} />
         <Route path='/contacts' element={<ContactsPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/login' element={<LoginPage />} />
