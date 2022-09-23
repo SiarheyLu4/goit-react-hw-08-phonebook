@@ -6,7 +6,7 @@ import LoginForm from "components/LoginForm/LoginForm";
 
 import { login } from "redux/auth/auth-operations";
 
-import { getAuthError, isAuth } from "redux/auth/auth-selectors";
+import { getAuthError } from "redux/auth/auth-selectors";
 
 const LoginPage = () => {
   const dispatch = useDispatch();

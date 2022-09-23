@@ -6,7 +6,7 @@ import RegisterForm from "components/RegisterForm/RegisterForm";
 
 import { signup } from "redux/auth/auth-operations";
 
-import { getAuthError, isAuth } from "redux/auth/auth-selectors";
+import { getAuthError } from "redux/auth/auth-selectors";
 
 const RegisterPage = () => {
   const dispatch = useDispatch();

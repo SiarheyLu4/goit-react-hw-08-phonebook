@@ -23,4 +23,15 @@ export const logout = async () => {
   return data;
 }
 
+export const getCurrent = async (token) => {
+  try {
+    instance.defaults.headers.common.authorization = `Bearer ${token}`;
+    const {data}= await instance.get("/users/current")
+    return data;
+  } catch (error) {
+    instance.defaults.headers.common.authorization = "";
+    throw error;
+  }
+}
+
 export default instance;
