@@ -6,7 +6,7 @@ import { addContact } from "redux/contacts/contacts-operations";
 
 export function ContactForm() {
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const dispatch = useDispatch();
 
@@ -19,7 +19,7 @@ export function ContactForm() {
         break;
       
       case 'number':
-        setPhone(value);
+        setNumber(value);
         break;
       
       default:
@@ -34,9 +34,9 @@ export function ContactForm() {
 
   const onSubmit = e => {
     e.preventDefault();
-    onAddContact({name, phone});
+    onAddContact({name, number});
     setName('');
-    setPhone('');
+    setNumber('');
   }
 
   return (
@@ -63,7 +63,7 @@ export function ContactForm() {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             placeholder="123-45-67"
-            value={phone}
+            value={number}
             onChange={onChangeForm}
           />
         </Label>

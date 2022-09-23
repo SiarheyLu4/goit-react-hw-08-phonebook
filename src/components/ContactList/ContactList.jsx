@@ -16,9 +16,9 @@ export const ContactList = () => {
 
   return (
     <Ul>
-      {contacts.sort((a, b) => a.name.localeCompare(b.name)).map(({id, name, phone}) => (
+      {contacts.sort((a, b) => a.name.localeCompare(b.name)).map(({id, name, number}) => (
         
-        <Li key={id}>{name}: {phone}
+        <Li key={id}>{name}: {number}
             <Btm type='' onClick={() => onRemoveContact(id, name)}> Del </Btm>
         </Li>
         
