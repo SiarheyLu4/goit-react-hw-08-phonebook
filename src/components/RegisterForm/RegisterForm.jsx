@@ -14,19 +14,19 @@ const RegisterForm = ({onSubmit}) => {
       <h2>Register page</h2>
       <Form action="" onSubmit={handleSubmit}>
         <div>
-          <Label htmlFor="">Имя пользователя:</Label>
-          <Input value={name} name="name" onChange={handleChange} type="text" placeholder="Введите имя пользователя" required />
+          <Label htmlFor="">User name:</Label>
+          <Input value={name} name="name" onChange={handleChange} type="text" placeholder="Enter username" required />
         </div>
         <div>
-          <Label htmlFor="">Email пользователя:</Label>
-          <Input value={email} name="email" onChange={handleChange} type="email" placeholder="Введите email пользователя" />
+          <Label htmlFor="">User Email:</Label>
+          <Input value={email} name="email" onChange={handleChange} type="email" placeholder="Enter email" />
         </div>
         <div>
-          <Label htmlFor="">Пароль пользователя:</Label>
-          <Input value={password} name="password" onChange={handleChange} type="password" placeholder="Введите пароль пользователя" />
+          <Label htmlFor="">User password:</Label>
+          <Input value={password} name="password" onChange={handleChange} type="password" placeholder="Enter password" />
         </div>
         <div>
-          <Btm type="submit">Регистрация</Btm>
+          <Btm type="submit">Registration</Btm>
         </div>
       </Form>
     </Card>

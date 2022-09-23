@@ -4,7 +4,7 @@ import styled from "styled-components";
 const NavbarMenu = () => {
 
   return (
-      <HeaderLink to='/contacts'>Phonebook</HeaderLink>
+    <HeaderLink to='/contacts'>Contacts</HeaderLink>
   )
 }
 
