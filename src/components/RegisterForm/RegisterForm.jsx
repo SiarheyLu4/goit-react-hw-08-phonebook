@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import { useDispatch } from "react-redux";
 
-
 import { initialState } from "./initialState";
 import useForm from "shared/hooks/useForm";
 import { signup } from "redux/auth/auth-operations";
-
 
 const RegisterForm = () => {
   const dispatch = useDispatch();
